@@ -57,4 +57,52 @@ public class AddTwoNumbers {
     	
     	return result;
     }
+    
+    /**
+     * 
+     * @param l1
+     * @param l2
+     * @return
+     */
+    /**
+     * 
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public static ListNode addTwoNumbers_xst(ListNode l1, ListNode l2) {
+    	
+    	
+    	ListNode resultList = null;
+    	int Carry = 0;	
+    	resultList = l1==null?l2:(l2==null?l1:resultList);		//判断有一个null的链表就返回另一个
+    	if (resultList!=null) {
+			return resultList;
+		}
+    	
+    	ListNode nodetemp = null;
+    	while (l1!=null||l2!=null) {	//循环遍历列表，知道两个链表都遍历完成			
+    		int sum = ((l1!=null)?l1.val:0) + ((l2!=null)?l2.val:0) + Carry;
+    		ListNode node = new ListNode(sum%10);
+    		Carry = sum/10;
+    		if (resultList==null) {
+    			nodetemp = node;
+				resultList = nodetemp;
+				l1 = l1.next;
+				l2 = l2.next;
+				continue;
+			}
+    		nodetemp.next = node;
+    		nodetemp = nodetemp.next; 
+    		l1 = (l1==null)?null:l1.next;
+    		l2 = (l2==null)?null:l2.next;
+		}
+    	if (Carry!=0) {			//遍历完成链表后，判断最后一位是否进位
+			ListNode node = new ListNode(Carry);
+			nodetemp.next = node;
+		}
+    
+    	return resultList;
+    }
+
 }
