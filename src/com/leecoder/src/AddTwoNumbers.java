@@ -58,17 +58,12 @@ public class AddTwoNumbers {
     	return result;
     }
     
+
     /**
-     * 
-     * @param l1
+     * 将两个链表合并到成一个链表
+     * @param l1	
      * @param l2
-     * @return
-     */
-    /**
-     * 
-     * @param l1
-     * @param l2
-     * @return
+     * @return	合成后的链表
      */
     public static ListNode addTwoNumbers_xst(ListNode l1, ListNode l2) {
     	
