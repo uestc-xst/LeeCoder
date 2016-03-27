@@ -32,7 +32,7 @@ public class TwoSum {
     	
     	int[] index = new int[2];
     	Map<Integer, Integer> map = null;
-    	map = new HashMap<>();
+    	map = new HashMap<Integer, Integer>();
     	int arrlen = nums.length;
     	if (nums.length<2) {
 			return index;

@@ -30,7 +30,16 @@ public class Main {
 		int max = LengthOfLongestSubstring.lengthOfLongestSubstring2(ss);
 		System.out.println(max);
 		
+		String arrString = "aabcde";
+		char[] chars = arrString.toCharArray();
+		char[][] sss = new char[2][2];
+		if (sss[0][0]==0) {
+			System.out.println(sss[0][0]);
+		}
+		System.out.println(sss[0][0]);
 		
+		String resString = ZigZagConversion.convert("PAYPALISHIRING", 3);
+		System.out.println(resString);
 		
 		
 	}
