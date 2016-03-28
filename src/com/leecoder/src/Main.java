@@ -41,7 +41,9 @@ public class Main {
 		String resString = ZigZagConversion.convert("PAYPALISHIRING", 3);
 		System.out.println(resString);
 		
-		
+		int xx = 1534236469;
+		int resultxx = ReverseInteger.reverse(xx);
+		System.out.println(resultxx);
 	}
 
 }
