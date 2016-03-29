@@ -44,6 +44,18 @@ public class Main {
 		int xx = 1534236469;
 		int resultxx = ReverseInteger.reverse(xx);
 		System.out.println(resultxx);
+		
+		String sx = "123b2";
+		StringBuffer teString = new StringBuffer(sx.substring(0,3));
+		teString.append('5');
+		teString.append(sx.substring(4,sx.length()));
+		
+//		System.out.println(teString.toString());
+//		Integer value = new Integer("+0012");
+		int val = String2Integer.myAtoi("-2147483649");
+		System.out.println(val);
+		
+		
 	}
 
 }
