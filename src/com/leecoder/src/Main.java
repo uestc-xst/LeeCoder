@@ -58,6 +58,10 @@ public class Main {
 		String Romanstr = "DCXXI";
 		int rnum = Roman2Integer.romanToInt(Romanstr);
 		System.out.println(rnum);
+		
+
+		String getRomanstr = Integer2Roman.intToRoman(4);
+		System.out.println(getRomanstr);
 	}
 
 }
