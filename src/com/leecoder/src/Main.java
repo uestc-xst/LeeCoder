@@ -55,7 +55,9 @@ public class Main {
 		int val = String2Integer.myAtoi("-2147483649");
 		System.out.println(val);
 		
-		
+		String Romanstr = "DCXXI";
+		int rnum = Roman2Integer.romanToInt(Romanstr);
+		System.out.println(rnum);
 	}
 
 }
