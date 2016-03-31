@@ -62,6 +62,11 @@ public class Main {
 
 		String getRomanstr = Integer2Roman.intToRoman(4);
 		System.out.println(getRomanstr);
+		
+		boolean bpal = PalindromeNumber.isPalindrome(12321);
+		System.out.println(bpal);
+		
+		
 	}
 
 }
