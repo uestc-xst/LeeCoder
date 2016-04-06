@@ -1,10 +1,12 @@
-package com.leecoder.src;
+package JUnitTest;
 
 import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.leecoder.src.Containerwithmostwater;
 
 import junit.framework.Assert;
 

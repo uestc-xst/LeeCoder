@@ -1,13 +1,14 @@
 package com.leecoder.src;
 
 import java.util.Arrays;
+import java.util.List;
 
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = new int[]{0,4,3,0};
+/*		int[] nums = new int[]{0,4,3,0};
 		System.out.println(nums.length);
 		TwoSum solution = new TwoSum();
 		int[] results = solution.twoSum(nums, 0);
@@ -66,6 +67,16 @@ public class Main {
 		boolean bpal = PalindromeNumber.isPalindrome(12321);
 		System.out.println(bpal);
 		
+		String[] egStrings = new String[]{"a","","ab"};
+		String longpre = LongestCommonPrefix.longestCommonPrefix(egStrings);
+		System.out.println(longpre);*/
+		
+		int[] S = {-1,0,1,2,-1,-4};
+		List<List<Integer>> getlist = ThreeSum.threeSum2(S);
+//		Arrays.sort(S);
+//		System.out.println(Arrays.toString(S));
+		int i=0;
+		i++;
 		
 	}
 
