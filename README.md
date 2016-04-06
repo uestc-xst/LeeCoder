@@ -15,4 +15,5 @@ this repository provide `JAVA` source code for leecoder<br>
 [Integer to Roman](https://github.com/uestc-xst/LeeCoder/blob/master/src/com/leecoder/src/Integer2Roman.java)<br>
 [Palindrome Number](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/PalindromeNumber.java)<br>
 [Container With Most Water](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/Containerwithmostwater.java)  		[JUnit测试类](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/ContainerwithwaterJUnitTest.java)<br>
+[3Sum](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/ThreeSum.java)<br>
 代码持续更新中...
