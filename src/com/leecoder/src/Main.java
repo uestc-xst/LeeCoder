@@ -78,6 +78,10 @@ public class Main {
 		int i=0;
 		i++;
 		
+//		int[] threes = {0,1,1,1};
+		int[] threes = {1,2,-1,-4};
+		int gettarget = ThreeSumClosest.threeSumClosest(threes, 1);
+		System.out.println(gettarget);
 	}
 
 }
