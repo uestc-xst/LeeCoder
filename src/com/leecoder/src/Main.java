@@ -71,7 +71,7 @@ public class Main {
 		String longpre = LongestCommonPrefix.longestCommonPrefix(egStrings);
 		System.out.println(longpre);*/
 		
-		int[] S = {-1,0,1,2,-1,-4};
+/*		int[] S = {-1,0,1,2,-1,-4};
 		List<List<Integer>> getlist = ThreeSum.threeSum2(S);
 //		Arrays.sort(S);
 //		System.out.println(Arrays.toString(S));
@@ -82,6 +82,12 @@ public class Main {
 		int[] threes = {1,2,-1,-4};
 		int gettarget = ThreeSumClosest.threeSumClosest(threes, 1);
 		System.out.println(gettarget);
+		*/
+		
+		String arrtet = "76";
+		LetterCombinations_PhoneNumber.letterCombinations(arrtet);
+		char[] chararr = arrtet.toCharArray();
+		System.out.println(arrtet.toCharArray());
 	}
 
 }
