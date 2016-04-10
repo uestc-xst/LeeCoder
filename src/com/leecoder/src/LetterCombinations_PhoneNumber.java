@@ -14,36 +14,72 @@ public class LetterCombinations_PhoneNumber {
 	static String[] arr_seven = new String[]{"p","q","r","s"};   	
 	static String[] arr_eight = new String[]{"t","u","v"};
 	static String[] arr_nine = new String[]{"w","x","y","z"};
+	
+	
 	/**
-	 * 
+	 * 获取字母组合
 	 * @param digits
 	 * @return
 	 */
     public static List<String> letterCombinations(String digits) {
     	
+
     	List<String> combinationList = new ArrayList<String>();
     	StringBuilder letter = new StringBuilder();
-
+    	
+    	if (digits==null||digits.length()==0) {
+			return combinationList;
+		}
     	
     	int len = digits.length();
+    	String[][] arrList = new String[len][];
+    	int[] index = new int[len]; 
+    	int totalnum = 1;
+    	
     	for(int i=0;i<len;i++){
-    		letter.append("a");
+    		String charcode = digits.substring(i,i+1);
+    		if (charcode.compareTo("2")<0||charcode.compareTo("9")>0) {
+				return null;
+			}
+    		arrList[i] = getArrays(digits.substring(i,i+1));
+    		index[i] = arrList[i].length;
+    		totalnum *= index[i];   				//计算组合长度
+    		letter.append(arrList[i][0]);			//初始化第一个组合
     	}
+
     	
-    	String ss = digits.substring(0,1);
-    	String[] chararr = new String[len];
-    	String[][] selectarr = null;
-    	for(int i = 0;i<len;i++){
-    		chararr[i] = digits.substring(i,i+1);
-    		selectarr[i] = new String[getArrays(chararr[i]).length];
-    		selectarr[i] = getArrays(chararr[i]);
+    	combinationList.add(letter.toString());
+    	int[] replacearr = new int[len];
+
+    	for(int i=0;i<totalnum-1;i++){			//计算替换字母在字母数组中的位置，类似于计算十进制数，只是每一位的紧致是对应数组的长度
+    		replacearr[len-1]++; 
+    		if (replacearr[len-1]>=index[len-1]) {
+        		for(int j=len-1;j>0;j--){
+        			if (replacearr[j]>=index[j]) {
+        				replacearr[j-1]++;
+        				replacearr[j] %= index[j];
+
+    				}       			
+        		}				
+			}
+        	for(int k=0;k<len;k++){
+    			letter.replace(k, k+1, arrList[k][replacearr[k]]);			
+        	}
+        	combinationList.add(letter.toString());
     	}
-    	
-    	ss  = ss+"";
+
+
 		return combinationList;
         
     }
     
+    
+    
+    /**
+     * 根据字符获取对应的字母数组
+     * @param code
+     * @return
+     */
     private static String[] getArrays(String code){
     	String[] returnarr = null;
     	switch (code) {
@@ -77,4 +113,5 @@ public class LetterCombinations_PhoneNumber {
     	return returnarr;
     	
     }
+    
 }

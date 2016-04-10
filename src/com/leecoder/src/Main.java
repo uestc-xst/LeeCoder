@@ -84,8 +84,8 @@ public class Main {
 		System.out.println(gettarget);
 		*/
 		
-		String arrtet = "76";
-		LetterCombinations_PhoneNumber.letterCombinations(arrtet);
+		String arrtet = "";
+		List<String> conbis = LetterCombinations_PhoneNumber.letterCombinations(arrtet);
 		char[] chararr = arrtet.toCharArray();
 		System.out.println(arrtet.toCharArray());
 	}

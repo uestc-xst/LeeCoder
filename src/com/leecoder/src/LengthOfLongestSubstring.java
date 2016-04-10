@@ -5,7 +5,6 @@ import java.util.HashMap;
 import com.sun.org.apache.bcel.internal.generic.GOTO;
 import com.sun.xml.internal.ws.org.objectweb.asm.Label;
 
-import sun.org.mozilla.javascript.internal.regexp.SubString;
 
 public class LengthOfLongestSubstring {
 	
