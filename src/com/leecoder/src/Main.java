@@ -1,5 +1,6 @@
 package com.leecoder.src;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -90,7 +91,7 @@ public class Main {
 /*		ListNode nodes = new ListNode(1);
 		ListNode resultnode = RemoveNthNodeFromEndofList.removeNthFromEnd(nodes, 1);*/
 		
-		ListNode[] nodes = new ListNode[5];
+/*		ListNode[] nodes = new ListNode[5];
 		for(int i=0;i<5;i++){
 			nodes[i] = new ListNode(i+1);
 		}
@@ -98,10 +99,12 @@ public class Main {
 			nodes[i].next = nodes[i+1];
 		}
 		ListNode resultnode = RemoveNthNodeFromEndofList.removeNthFromEnd(nodes[0], 2);
-		System.out.println("hello");
+		System.out.println("hello");*/
 
-
+		boolean b = ValidParentheses.isValid("([])");
+		System.out.println(b);
 		
+
 	}
 
 }
