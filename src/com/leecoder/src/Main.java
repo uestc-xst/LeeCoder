@@ -84,10 +84,24 @@ public class Main {
 		System.out.println(gettarget);
 		*/
 		
-		String arrtet = "";
-		List<String> conbis = LetterCombinations_PhoneNumber.letterCombinations(arrtet);
-		char[] chararr = arrtet.toCharArray();
-		System.out.println(arrtet.toCharArray());
+/*		String arrtet = "24";
+		List<String> conbis = LetterCombinations_PhoneNumber.letterCombinations(arrtet);*/
+
+/*		ListNode nodes = new ListNode(1);
+		ListNode resultnode = RemoveNthNodeFromEndofList.removeNthFromEnd(nodes, 1);*/
+		
+		ListNode[] nodes = new ListNode[5];
+		for(int i=0;i<5;i++){
+			nodes[i] = new ListNode(i+1);
+		}
+		for(int i=0;i<4;i++){
+			nodes[i].next = nodes[i+1];
+		}
+		ListNode resultnode = RemoveNthNodeFromEndofList.removeNthFromEnd(nodes[0], 2);
+		System.out.println("hello");
+
+
+		
 	}
 
 }
