@@ -104,7 +104,16 @@ public class Main {
 		boolean b = ValidParentheses.isValid("([])");
 		System.out.println(b);
 		
-
+		ListNode l1 = null,l2 = null;
+		ListNode resultnodes = null;
+		l1 = new ListNode(1);
+		//l1.next = new ListNode(3);
+		l2 = new ListNode(1);
+		//l2.next = new ListNode(7);
+		resultnodes = MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		System.out.println("hello");
+		
+		
 	}
 
 }
