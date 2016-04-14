@@ -101,7 +101,7 @@ public class Main {
 		ListNode resultnode = RemoveNthNodeFromEndofList.removeNthFromEnd(nodes[0], 2);
 		System.out.println("hello");*/
 
-		boolean b = ValidParentheses.isValid("([])");
+/*		boolean b = ValidParentheses.isValid("([])");
 		System.out.println(b);
 		
 		ListNode l1 = null,l2 = null;
@@ -111,9 +111,35 @@ public class Main {
 		l2 = new ListNode(1);
 		//l2.next = new ListNode(7);
 		resultnodes = MergeTwoSortedLists.mergeTwoLists(l1, l2);
+		System.out.println("hello");*/
+		//int[] nums = {0,0,0,0};
+		//int[] nums = {-3,-2,-1,0,0,1,2,3};
+		int[] nums = {-1,-5,-5,-3,2,5,0,4};
+		List<List<Integer>> testlist = FourSum.fourSum(nums, 0);
 		System.out.println("hello");
-		
+
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
