@@ -128,7 +128,7 @@ public class Main {
 			sBuilder.insert(len-i, "a");			
 		}
 		System.out.println(sBuilder.toString());
-		List<String> aList = GenerateParentheses.generateParenthesis(1);
+		List<String> aList = GenerateParentheses.generateParenthesis(3);
 		System.out.println("");
 	}
 

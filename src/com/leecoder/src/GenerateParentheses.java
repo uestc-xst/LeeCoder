@@ -11,39 +11,18 @@ public class GenerateParentheses {
 
 	
 	
-	
-	
+	/**
+	 * given n = 3, a solution set is:"((()))", "(()())", "(())()", "()(())", "()()()"
+	 * @param n
+	 * @return
+	 */
     public static List<String> generateParenthesis(int n) {
     	ArrayList<String> aList = new ArrayList<>();	
     	if (n==1) {
     		aList.add("()");
 			return aList;
 		}else {
-			List<String> listtemp = CreateParenthesis(n-1);
-			int jlen = listtemp.size();
-			for(int j=0;j<jlen;j++){
-				
-				int len = listtemp.get(j).length();
-				for(int i=0;i<=len;i++){
-					StringBuilder sb = new StringBuilder(listtemp.get(j));
-					sb.insert(len-i, "()");	
-					if (!aList.contains(sb.toString())) {
-						aList.add(sb.toString());
-					}
-				}				
-			}
-
-		}
-		return aList;
-    }
-    
-    public static List<String> CreateParenthesis(int n){
-    	ArrayList<String> aList = new ArrayList<>();	
-    	if (n==1) {
-    		aList.add("()");
-			return aList;
-		}else {
-			List<String> listtemp = CreateParenthesis(n-1);
+			List<String> listtemp = generateParenthesis(n-1);
 			int jlen = listtemp.size();
 			for(int j=0;j<jlen;j++){
 				
