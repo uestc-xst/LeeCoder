@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.sun.net.ssl.SSLContext;
+
 
 public class Main {
 
@@ -114,11 +116,20 @@ public class Main {
 		System.out.println("hello");*/
 		//int[] nums = {0,0,0,0};
 		//int[] nums = {-3,-2,-1,0,0,1,2,3};
-		int[] nums = {-1,-5,-5,-3,2,5,0,4};
+/*		int[] nums = {-1,-5,-5,-3,2,5,0,4};
 		List<List<Integer>> testlist = FourSum.fourSum(nums, 0);
-		System.out.println("hello");
+		System.out.println("hello");*/
 
-		
+	
+		String ss = "xst";
+		int len = ss.length();
+		StringBuilder sBuilder = new StringBuilder(ss);
+		for(int i=0;i<=len;i++){
+			sBuilder.insert(len-i, "a");			
+		}
+		System.out.println(sBuilder.toString());
+		List<String> aList = GenerateParentheses.generateParenthesis(1);
+		System.out.println("");
 	}
 
 }
