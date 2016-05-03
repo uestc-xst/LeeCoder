@@ -131,7 +131,7 @@ public class Main {
 		List<String> aList = GenerateParentheses.generateParenthesis(3);
 		System.out.println("");*/
 		
-		ListNode[] nodes = new ListNode[4];
+/*		ListNode[] nodes = new ListNode[4];
 		nodes[0] = new ListNode(1);
 		nodes[1] = new ListNode(2);
 		nodes[2] = new ListNode(3);
@@ -140,8 +140,12 @@ public class Main {
 		nodes[1].next = nodes[2];
 		nodes[2].next = nodes[3];
 		ListNode head = SwapNodesinPairs.swapPairs(nodes[0]);
-		System.out.println("hello");
+		System.out.println("hello");*/
 		
+		
+		int[] sum = {1,2};
+		int len = RmDuplicatesfromSortArr.removeDuplicates(sum);
+		System.out.println(len);
 	}
 
 }
