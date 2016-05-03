@@ -24,4 +24,5 @@ this repository provide `JAVA` source code for leecoder<br>
 [4Sum](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/FourSum.java)<br>
 [Generate Parentheses](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/GenerateParentheses.java)<br>
 [Swap Nodes in Pairs](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/SwapNodesinPairs.java)<br>
+[Remove Duplicates from Sorted Array](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/RmDuplicatesfromSortArr.java)<br>
 代码持续更新中...
