@@ -121,7 +121,7 @@ public class Main {
 		System.out.println("hello");*/
 
 	
-		String ss = "xst";
+/*		String ss = "xst";
 		int len = ss.length();
 		StringBuilder sBuilder = new StringBuilder(ss);
 		for(int i=0;i<=len;i++){
@@ -129,7 +129,19 @@ public class Main {
 		}
 		System.out.println(sBuilder.toString());
 		List<String> aList = GenerateParentheses.generateParenthesis(3);
-		System.out.println("");
+		System.out.println("");*/
+		
+		ListNode[] nodes = new ListNode[4];
+		nodes[0] = new ListNode(1);
+		nodes[1] = new ListNode(2);
+		nodes[2] = new ListNode(3);
+		nodes[3] = new ListNode(4);
+		nodes[0].next = nodes[1];
+		nodes[1].next = nodes[2];
+		nodes[2].next = nodes[3];
+		ListNode head = SwapNodesinPairs.swapPairs(nodes[0]);
+		System.out.println("hello");
+		
 	}
 
 }
