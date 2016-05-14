@@ -153,7 +153,9 @@ public class Main {
 		int result = DivideTwoIntegers.divide(11, -2);
 		System.out.println(result);
 		
-		
+		int[] nums = {1,3,3};
+		int cnt = RemoveElement.removeElement(nums, 3);
+		System.out.println(cnt);	
 	}
 
 }
