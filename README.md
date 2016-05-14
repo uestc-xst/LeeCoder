@@ -27,4 +27,5 @@ this repository provide `JAVA` source code for leecoder<br>
 [Remove Duplicates from Sorted Array](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/RmDuplicatesfromSortArr.java)<br>
 [Count and Say](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/CountandSay.java)<br>
 [Divide Two Integers](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/DivideTwoIntegers.java)<br>
+[Remove Element](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/RemoveElement.java)<br>
 代码持续更新中...
