@@ -155,7 +155,13 @@ public class Main {
 		
 		int[] nums = {1,3,3};
 		int cnt = RemoveElement.removeElement(nums, 3);
-		System.out.println(cnt);	
+		System.out.println(cnt);
+		
+		int[] nums1 = {1,2,2};
+		int[] result1 = SearchforaRange.searchRange(nums1, 2);
+		System.out.println(result1[0]+" "+result1[1]);
+		
+		
 	}
 
 }
