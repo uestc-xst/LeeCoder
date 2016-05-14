@@ -30,4 +30,5 @@ this repository provide `JAVA` source code for leecoder<br>
 [Remove Element](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/RemoveElement.java)<br>
 [Search for a Range](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/SearchforaRange.java)<br>
 [Search Insert Position](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/SearchInsertPosition.java)<br>
+[Valid Sudoku](https://github.com/uestc-xst/LeeCoder/blob/dev/src/com/leecoder/src/ValidSudoku.java)<br>
 代码持续更新中...
