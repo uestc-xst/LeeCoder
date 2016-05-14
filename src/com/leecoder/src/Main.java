@@ -161,6 +161,10 @@ public class Main {
 		int[] result1 = SearchforaRange.searchRange(nums1, 2);
 		System.out.println(result1[0]+" "+result1[1]);
 		
+		int[] nums2 = {1,3,5,6};
+		int result2 = SearchInsertPosition.searchInsert(nums2, 6);
+		System.out.println(result2);	
+		
 		
 	}
 
