@@ -143,9 +143,14 @@ public class Main {
 		System.out.println("hello");*/
 		
 		
-		int[] sum = {1,2};
+/*		int[] sum = {1,2};
 		int len = RmDuplicatesfromSortArr.removeDuplicates(sum);
-		System.out.println(len);
+		System.out.println(len);*/
+		
+		String Say = CountandSay.countAndSay(3);
+		System.out.println(Say);
+		
+		
 	}
 
 }
